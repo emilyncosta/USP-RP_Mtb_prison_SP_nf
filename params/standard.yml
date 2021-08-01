@@ -1,0 +1,6 @@
+outdir:
+        ./results/same_person_genomes
+
+reads:
+        ./data/full_data/*_{R1,R2}*fastq.gz
+
