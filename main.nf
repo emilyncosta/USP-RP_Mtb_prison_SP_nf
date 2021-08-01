@@ -6,7 +6,7 @@ include { TBPROFILER_PROFILE; TBPROFILER_COLLATE } from "./modules/tbprofiler/tb
 workflow {
     reads_ch = Channel.fromFilePairs(params.reads)
 
-    TBPROFILER_PROFILE(TRIMMOMATIC.out)
+    TBPROFILER_PROFILE(reads_ch)
     TBPROFILER_COLLATE(TBPROFILER_PROFILE.out.collect())
 
 

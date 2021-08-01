@@ -1,0 +1,9 @@
+*/**/*fastq.gz
+*/**/*fasta
+*/**/*gbk
+*nextflow*
+
+resources/*jar
+work
+results*
+
